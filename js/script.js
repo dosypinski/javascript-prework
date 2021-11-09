@@ -29,8 +29,15 @@ function playGame(playerInput) {
     else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
         printMessage('Wygrywasz!');
     }
-
-
+    else if(argComputerMove == 'papier' && argPlayerMove == 'kamień') {
+        printMessage('Przegrywasz!');
+    }
+    else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
+        printMessage('Wygrywasz!');
+    }
+    else if(argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
+        printMessage('Przegrywasz');
+    }
   }
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);

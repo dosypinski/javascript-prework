@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+.container {
+  max-width: 1140px;
+  margin: 80px auto;
+  padding: 80px 40px;
+  background-color: #b7eddf;
+  border-radius: 20px;
+  min-height: 400px;
+}
+.head {
+  padding: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  
+}
+.btn {
+  font-size: 64px;
+  border-radius: 50px;
+  border-style: none;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #f5b833;
+}
+.btn:hover {
+  background-color: #e3a92d;
+}
+.msgs {
+  font-size: 20px;
+  margin-top: 40px;
+}
