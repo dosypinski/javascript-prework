@@ -1,3 +1,10 @@
+var compScore = 1;
+var playerScore = 1;
+var round = 1;
+document.getElementById("round").innerHTML  = 'Runda '+round;
+
+
+
 function playGame(playerInput) {
   clearMessages();
   function getMoveName(argMoveId){
@@ -13,6 +20,14 @@ function playGame(playerInput) {
       return 'nieznany ruch';
     }
   }
+
+  roundUp()
+
+  function roundUp() {
+  round += 1;
+  document.getElementById("round").innerHTML  = 'Runda '+round;
+  }
+
 
   function displayResult(argComputerMove, argPlayerMove) {
     console.log('moves' + argComputerMove + argPlayerMove);
@@ -61,6 +76,8 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame('3');
 });
+document.getElementById("playerScore") = playerScore;
+document.getElementById("compScore") = compScore;
 /*
 if(randomNumber == 1){
   computerMove = 'kamień';
